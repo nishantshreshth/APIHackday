@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TeleDoc | Doctor Over Phone.</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link href="../static/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="../static/css/font-awesome.min.css" type="text/css" rel="stylesheet"/>
+  <link href="../static/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  
+</head>
+<body>
+  <div class="navbar-fixed">
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">TeleDoc</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="/addQues" target="_blank">Add Question</a></li>
+        <li><a class="waves-effect waves-red btn-flat modal-trigger" href="#modal1">Get Connected</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="/addQues" target="_blank">NGOs Login</a></li>
+        <li><a class="waves-effect waves-red btn-flat modal-trigger" href="#modal1">Get Connected</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="fa fa-bars red-text"></i></a>
+    </div>
+  </nav>
+  </div>
+
+  <div class="row">
+    <div class="col l12">
+      <ul class="tabs">
+        <li class="tab col s3"><a href="#test1">Query Question</a></li>
+        <li class="tab col s3" class="active"><a href="#test2">Add Person</a></li>
+      </ul>
+    </div>
+    <div class="container">
+  <div id="test1" class="col l12">
+        <div class="card col l12">
+          <div class="card-content">
+            <div class="row">
+              <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s12">
+                      <input type="text" value="{{request.form.q}}"
+                      <label for="q">Query</label>
+                    </div>
+                </div>
+                <center>
+                  <button class="btn waves-effect waves-light" type="submit" name="action">Search
+                  <i class="material-icons right">send</i>
+                  </button>
+                </center>
+              </form>
+            </div>
+            <div class="row">
+              <ul class="collapsible" data-collapsible="accordion">
+                <li>
+                  <div class="collapsible-header"><h5>What should I eat while I'm pregnant?</h5></div>
+                  <div class="collapsible-body"><p>While pregnant, you're eating for two, as the old saying goes -- but just what are you two supposed to be eating?
+Get all essential vitamins and minerals daily. That means sticking with the prenatal vitamins you started prior to becoming pregnant, as well as eating a healthy diet.
+Fill your plate with leafy greens, fruits, veggies, and whole grains (like wheat breads and cereals). Get plenty of calcium-rich foods like broccoli and low-fat milk and yogurt, to help build your baby's bones and teeth. Stick to lean meats like chicken and turkey.</p></div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><h5>What shouldn't I eat while I'm pregnant?</h5></div>
+                  <div class="collapsible-body"><p>Foods to avoid during pregnancy include:
+Fish with lots of mercury. High levels of mercury can damage a baby's developing brain. But don't cut out fish completely -- they give you important omega-3 fatty acids. Cut out fish like swordfish, tilefish, and shark. If you love your tuna and snapper, you can still eat it -- just cut back to no more than one serving a week. You can eat up to two servings of fish like salmon, catfish, mahi mahi, and cod, along with shellfish like shrimp, crab, and scallops. For a more detailed list of fish and their mercury levels, go tohttp://www.americanpregnancy.org/pregnancyhealth/sushimercury.htm.
+Raw fish. Sorry, sushi and sashimi lovers.
+Unpasteurized soft cheeses like brie, Camembert, feta, gorgonzola, and Roquefort. They may contain bacteria calledlisteria that can cross the placenta, potentially causingmiscarriage or leading to a life-threatening infection.
+Unpasteurized milk, which can also contain listeria.
+Cold ready-to-eat meats, like hot dogs and luncheon meats; these can also contain listeria. Reheat these foods until they are steaming.
+Uncooked or cured eggs and meats, like prosciutto, runny eggs, and sauces made with raw eggs (like some hollandaises).
+Alcohol. There is no known safe level of exposure to alcohol for a fetus. Prenatal exposure to alcohol can interfere with healthy development and lead to fetal alcohol syndrome, one of the most common causes of mental retardation and the only one that is completely preventable.
+Caffeine. While some studies show that moderate caffeineintake during pregnancy is OK, others have found a link to miscarriage, so it's particularly important to steer clear ofcaffeine during the first trimester. Large amounts of caffeine have been linked to premature birth and low birth weight, so do your best to switch to decaf. If you can't cut it out entirely, limit intake to 300 milligrams per day or less (1-2 cups of coffee).</p></div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><h5>How can I safely exercise while pregnant?</h5></div>
+                  <div class="collapsible-body">Exercise during pregnancy is generally considered safe for mosthealthy women and can even relieve some of the discomforts of pregnancy. Some forms of exercise that are particularly good for pregnant women are walking, swimming, stationary cycling, and yoga. The American College of Obstetricians and Gynecologists recommends that you focus on non-weight-bearing activities and those that don't require an enormous amount of balance (so some of those extremely challenging yoga postures may be out until postpartum). Wear loose-fitting, lightweight clothing while exercising, get plenty of fluids, and don't work to the point of exhaustion.
+When you reach your second and third trimesters, don't do exercises that require lying on your back, and never do workouts that pose a risk of trauma to your abdomen while pregnant. And always be sure to check with your doctor about any exercise program before getting started. Some women -- such as those with preeclampsia, preterm labor, andhypertension or heart disease -- may be advised not to exercise or to pursue very limited physical activities while pregnant.</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>    
+      </div>
+  </div>
+  
+      <div id="test2" class="col l12">
+        <div class="card">
+          <div class="card-content">
+            <div class="row">
+              <form class="col s12">
+                <div class="row">
+                  <div class="input-field col s6">
+                    <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+                    <label for="first_name">First Name</label>
+                  </div>
+                  <div class="input-field col s6">
+                      <input id="last_name" type="text" class="validate">
+                      <label for="last_name">Last Name</label>
+                  </div>
+                  </div>
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <input type="date" class="datepicker">
+                          <label>Date Of Birth</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s12">
+                          <textarea id="add" type="testArea" class="materialize-textarea"></textarea>
+                          <label for="email">Address</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                    <button class=" right btn waves-effect waves-light" type="submit" name="action">Submit
+                    <i class="material-icons right">send</i>
+                    </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+  <script src="static/js/jquery.min.js"></script>
+  <script src="../static/js/materialize.min.js"></script>
+  <script src="../static/js/init.js"></script>
+  <script src="../static/js/jQuerySimpleCounter.js"></script>
+</html>

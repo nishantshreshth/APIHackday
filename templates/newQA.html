@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TeleDoc | Doctor Over Phone.</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link href="../static/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="../static/css/font-awesome.min.css" type="text/css" rel="stylesheet"/>
+  <link href="../static/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  
+</head>
+<body>
+  <div class="navbar-fixed">
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">TeleDoc</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="/ngo" target="_blank">NGOs Login</a></li>
+        <li><a class="waves-effect waves-red btn-flat modal-trigger" href="#modal1">Get Connected</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="/ngo" target="_blank">NGOs Login</a></li>
+        <li><a class="waves-effect waves-red btn-flat modal-trigger" href="#modal1">Get Connected</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="fa fa-bars red-text"></i></a>
+    </div>
+  </nav>
+  </div>
+  <div class="conatiner">
+    <div class="card">
+      <div class="card-content">
+        <div class="row">
+        <form action="" method="post">
+          <div class="row">
+            <div class="input-field col l6 s12">
+              <i class="fa fa-user prefix"></i>
+              <input type="text" name="name" value="{{request.form.name}}"class="validate" required="required">
+              <label for="name">Name</label>
+            </div>
+            <div class="input-field col l6 s12">
+              <i class="fa fa-phone prefix"></i>
+              <input type="text" name="phone" value="{{request.form.phone}}" class="validate" required="required">
+              <label for="phone">Phone</label>
+            </div>
+            <div class="input-field col s12 l12">
+              <i class="fa fa-envelope prefix"></i>
+              <input type="text" name="ques" value="{{request.form.ques}}" required="required">
+              <label for="ques">Question</label>
+            </div>
+          </div>
+          <center>
+            <button class="btn waves-effect waves-light red lighten-2" type="submit" name="action" style="margin-bottom: -50px; margin-left: 30px;">SUBMIT
+            </button>
+          </center>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+<script src="static/js/jquery.min.js"></script>
+  <script src="../static/js/materialize.min.js"></script>
+  <script src="../static/js/init.js"></script>
+  <script src="../static/js/jQuerySimpleCounter.js"></script>
+</html>
