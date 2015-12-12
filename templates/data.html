@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Snapego | Pre Data </title>
+  <meta property="og:url" content="http://www.snapego.com" />
+  <meta property="og:type" content="application" />
+  <meta property="og:title" content="Lets Get Egocious !" />
+  <meta property="fb:app_id" content="871670512881498" />
+  <meta property="og:description" content="Show The world how amazingly talented you are.!" />
+  <meta property="og:image" content="http://www.snapego.com/static/img/p1.jpg" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link href="../static/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="../static/css/font-awesome.min.css" type="text/css" rel="stylesheet"/>
+  <link href="../static/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+ <div class="navbar-fixed">
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="/" class="brand-logo">Snapego</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a class="waves-effect waves-red btn-flat" href="/snapegopanel/logout">Log Out</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="http://snapego.wordpress.com" target="_blank">Blog</a></li>
+        <li><a class="waves-effect waves-red btn-flat modal-trigger" href="/">Get Connected</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="fa fa-bars red-text"></i></a>
+    </div>
+    </nav>
+  </div>
+  <div class = "container">
+    <table class="bordered highlight">
+        <thead>
+          <tr>
+              <th data-field="id">ID</th>
+              <th data-field="name">Name</th>
+              <th data-field="Phn">Phone Number</th>
+              <th data-field="Email">Email</th>
+          </tr>
+        </thead>
+        {% for user in users %}
+          <tr>
+            <td>{{ user['_id']}}</td>
+            <td>{{ user['name']}}</td>
+            <td>{{ user['phone']}}</td>
+            <td>{{ user['email']}}</td>
+          </tr>
+        {%endfor%}
+    </table>
+  </div>
+
+  <footer class="page-footer red lighten-2">
+    <div class="container">
+      <div class="row center white-text">
+        <ul>
+        <li><a href="https://www.facebook.com/snapego" target="_blank" class="white-text"><i class="fa fa-facebook fa-2x"></i></a></li>
+        <li><a href="#" class="white-text"><i class="fa fa-twitter fa-2x"></i></a></li>
+        <li><a href="#" class="white-text"><i class="fa fa-google-plus fa-2x"></i></a></li>
+        <li><a href="#" class="white-text"><i class="fa fa-envelope fa-2x"></i></a></li>
+
+        </ul>
+        </div>
+        <div class="row center">
+          <ul>
+            <li><a class="brown-text" href="#!">Terms and Conditions</a></li>
+            <li><a class="brown-text" href="#!">Careers</a></li>
+            <li><a class="brown-text" href="#!">Privacy</a></li>
+            <li><a class="brown-text" href="#!">Team</a></li>
+            <li><a class="brown-text" href="http://snapego.wordpress.com" target="_blank">Blog</a></li>
+            <li><a class="brown-text" href="#!">News</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      <div class="row">
+        <div class="col l6">
+          <span class="brown-text">
+          &copy; 2015 | Snapego</span>
+        </div>
+        <div class="col l6 right brown-text">
+          <p class="right">Handcrafted With <span class="white-text"><i class="fa fa-heart fa-2x"></i></span> in India.</p> 
+        </div>
+        </div>
+    </div>
+  </footer>
+  <script src="../static/js/jquery.min.js"></script>
+  <script src="../static/js/materialize.min.js"></script>
+  <script src="../static/js/init.js"></script>
+  <script src="../static/js/jQuerySimpleCounter.js"></script>
+</body>
+</html>

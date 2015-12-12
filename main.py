@@ -14,7 +14,7 @@ app.secret_key="cvsa213526bcdmdhdjGFF2324vF342fGtYHj42"
 
 @app.route('/', methods=['GET', 'POST'])
 def home():
-	return "Hello"
+	return render_template('index.html')
 
 
 @app.route('/login', methods=['GET', 'POST'])
